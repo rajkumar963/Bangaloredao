@@ -61,25 +61,36 @@ const DevelopersHub = () => {
               Be part of a thriving ecosystem with grants, hackathons, and continuous support.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
               {socials.map((item, idx) => (
                 <a
                   key={idx}
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`dev-card group relative flex items-center justify-center w-20 h-20 rounded
-                             bg-gradient-to-br  shadow-lg transform transition 
-                             hover:scale-110 hover:shadow-2xl`}
+                  className={`
+                    dev-card group relative flex items-center justify-center
+                    w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24
+                    rounded bg-gradient-to-br shadow-lg transform transition
+                    hover:scale-110 hover:shadow-2xl
+                  `}
                 >
-                  <div className="absolute inset-0 rounded bg-slate-100 flex items-center justify-center transition-colors duration-300 ">
+                  <div
+                    className="
+                      absolute inset-0 rounded bg-slate-100 flex items-center justify-center
+                      transition-colors duration-300
+                    "
+                  >
                     {item.icon && (
-                      <span className="text-black text-6xl">{item.icon}</span>
+                      <span className="text-black text-4xl sm:text-5xl md:text-6xl">
+                        {item.icon}
+                      </span>
                     )}
                   </div>
                 </a>
               ))}
             </div>
+
           </motion.div>
         </div>
       </section>
