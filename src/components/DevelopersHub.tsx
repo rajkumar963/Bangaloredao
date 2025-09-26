@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaDiscord, FaLinkedinIn, FaTelegramPlane, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaLinkedinIn, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,10 +33,11 @@ const DevelopersHub = () => {
   }, []);
 
   const socials = [
-    { icon: <FaDiscord />, link: "https://discord.com/invite/BLRDAO", color: "" },
-    { icon: <FaLinkedinIn />, link: "https://linkedin.com/company/blrdao", color: "from-blue-500 to-cyan-500" },
-    { icon: <FaTwitter />, link: "https://twitter.com/BLRDAO", color: "from-sky-400 to-blue-500" },
-    { icon: <FaTelegramPlane />, link: "https://t.me/BLRDAO", color: "from-teal-400 to-cyan-500" },
+    { icon: <FaDiscord />, link: "https://discord.com/invite/BLRDAO"},
+    { icon: <FaLinkedinIn />, link: "https://linkedin.com/company/blrdao"},
+    { icon: <FaTwitter />, link: "https://twitter.com/BLRDAO"},
+    { icon: <FaTelegramPlane />, link: "https://t.me/BLRDAO" },
+    { icon:<FaInstagram />, link: "https://instagram.com/blrdao"}
   ];
 
   return (
@@ -71,7 +72,7 @@ const DevelopersHub = () => {
                              bg-gradient-to-br  shadow-lg transform transition 
                              hover:scale-110 hover:shadow-2xl`}
                 >
-                  <div className="absolute inset-0 rounded bg-slate-100 flex items-center justify-center transition-colors duration-300">
+                  <div className="absolute inset-0 rounded bg-slate-100 flex items-center justify-center transition-colors duration-300 ">
                     {item.icon && (
                       <span className="text-black text-6xl">{item.icon}</span>
                     )}
