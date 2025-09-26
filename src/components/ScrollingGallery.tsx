@@ -4,7 +4,7 @@ const galleryItems = [
   {
     type: "stat",
     content: {
-      number: "2,6k",
+      number: "1.6k",
       description: "xDay 2023 attendees",
       bgColor: "bg-purple-300",
       textColor: "text-black",
@@ -34,7 +34,7 @@ const galleryItems = [
   {
     type: "stat",
     content: {
-      number: "39k",
+      number: "9k",
       description: "On Discord and Telegram",
       bgColor: "bg-cyan-200",
       textColor: "text-black",
@@ -113,7 +113,7 @@ const secondRowItems = [
   {
     type: "stat",
     content: {
-      number: "2,6k",
+      number: "1.2k",
       description: "xDay 2023 attendees",
       bgColor: "bg-purple-300",
       textColor: "text-black",
@@ -128,7 +128,7 @@ const secondRowItems = [
   },
 ];
 
-function GalleryItem({ item }) {
+function GalleryItem({item}) {
   if (item.type === "stat") {
     return (
       <div id="gallery" className={`${item.content.bgColor} ${item.content.textColor} p-6 rounded-3xl min-w-[280px] h-[200px] flex flex-col justify-center border-0 shadow-lg`}>
@@ -165,19 +165,19 @@ export default function ScrollingGallery() {
   return (
     <>
       {/* CSS Animations */}
-      <style>{`
+     <style>{`
         @keyframes scroll-right-to-left {
           0% {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-33.333%);
+            transform: translateX(-100%);
           }
         }
 
         @keyframes scroll-left-to-right {
           0% {
-            transform: translateX(-33.333%);
+            transform: translateX(-100%);
           }
           100% {
             transform: translateX(0);
@@ -185,11 +185,11 @@ export default function ScrollingGallery() {
         }
 
         .animate-scroll-right-to-left {
-          animation: scroll-right-to-left 25s linear infinite;
+          animation: scroll-right-to-left 40s linear infinite;
         }
 
         .animate-scroll-left-to-right {
-          animation: scroll-left-to-right 25s linear infinite;
+          animation: scroll-left-to-right 40s linear infinite;
         }
       `}</style>
 
