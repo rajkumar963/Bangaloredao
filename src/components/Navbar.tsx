@@ -16,9 +16,9 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Platform', href: '#platform', hasDropdown: true },
-    { name: 'Developers', href: '#developers' },
-    { name: 'Ecosystem', href: '#ecosystem' },
+    { name: 'Home', href: '#platform' },
+    { name: 'Gallery', href: '#gallery' },
+    { name: 'Community', href: '#community' },
   ];
 
   return (
@@ -60,12 +60,9 @@ const Navbar = () => {
               >
                 <a
                   href={item.href}
-                  className='flex items-center space-x-1 font-medium transition-all duration-300 hover:scale-105'
+                  className='flex items-center space-x-2 font-medium transition-all '
                 >
                   <span>{item.name}</span>
-                  {item.hasDropdown && (
-                    <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" />
-                  )}
                 </a>
                 
                 {/* Hover indicator */}

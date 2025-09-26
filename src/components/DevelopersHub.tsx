@@ -41,7 +41,7 @@ const DevelopersHub = () => {
 
   return (
     <>
-      <section id="developers" className="py-24 bg-gradient-to-b from-black via-gray-900 to-black">
+      <section id="community" className="py-24 bg-gradient-to-b from-black via-gray-900 to-black">
         <div
           ref={sectionRef}
           className="container mx-auto px-6 md:px-12 max-w-5xl rounded-3xl bg-gray-950/60 backdrop-blur-md border border-gray-800 shadow-xl"

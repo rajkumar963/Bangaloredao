@@ -131,7 +131,7 @@ const secondRowItems = [
 function GalleryItem({ item }) {
   if (item.type === "stat") {
     return (
-      <div className={`${item.content.bgColor} ${item.content.textColor} p-6 rounded-3xl min-w-[280px] h-[200px] flex flex-col justify-center border-0 shadow-lg`}>
+      <div id="gallery" className={`${item.content.bgColor} ${item.content.textColor} p-6 rounded-3xl min-w-[280px] h-[200px] flex flex-col justify-center border-0 shadow-lg`}>
         <div className="text-4xl md:text-6xl font-bold mb-2">{item.content.number}</div>
         <div className="text-sm md:text-lg font-medium leading-tight">{item.content.description}</div>
       </div>
